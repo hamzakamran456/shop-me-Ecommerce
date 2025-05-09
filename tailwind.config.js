@@ -5,12 +5,12 @@ export default {
     extend: {
       colors: {
         primary: "#4263eb",
-        secondary: "63e6be",
+        secondary: "#63e6be",
       },
       container: {
         center: true,
         padding: {
-          DEFAULt: "1rem",
+          DEFAULT: "1rem",
           sm: "3rem",
         },
       },
