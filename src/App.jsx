@@ -6,6 +6,7 @@ import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Products from "./components/Products/Products";
+import TopProducts from "./components/TopProducs/TopProducts";
 
 function App() {
   const [orderPopup, setOrderPopup] = useState(false);
@@ -27,9 +28,10 @@ function App() {
     <>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
         <Navbar handleOrderPopup={handleOrderPopup} />
-        <Hero handleOrderPopup />
-        <Banner />
+        <Hero handleOrderPopup={handleOrderPopup} />
         <Products />
+        <TopProducts handleOrderPopup={handleOrderPopup} />
+        <Banner />
       </div>
     </>
   );

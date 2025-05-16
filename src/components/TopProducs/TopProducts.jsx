@@ -48,15 +48,29 @@ const TopProducts = ({ handleOrderPopup }) => {
           {ProductsData.map((data) => (
             <div
               data-aos="zoom-in"
-              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]"
+              className="rounded-2xl text-center bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]"
             >
-              <div className="w-full flex justify-center items-center gap-1">
-              <FaStar className="text-yellow-400" />
-              <FaStar className="text-yellow-400" />
-              <FaStar className="text-yellow-400" />
-              <FaStar className="text-yellow-400" />
+              <div className="h-[100px]">
+                <img
+                  src={data.img}
+                  alt=""
+                  className="max-w-[140px] mx-auto block transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md"
+                />
               </div>
-              h1
+              <div className="w-full flex justify-center items-center gap-1">
+                <FaStar className="text-yellow-400" />
+                <FaStar className="text-yellow-400" />
+                <FaStar className="text-yellow-400" />
+                <FaStar className="text-yellow-400" />
+              </div>
+              <h1 className="text-xl font-bold">{data.title}</h1>
+              <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
+                {data.description}
+              </p>
+              <button
+                className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary"
+                onClick={handleOrderPopup}
+              ></button>
             </div>
           ))}
         </div>
