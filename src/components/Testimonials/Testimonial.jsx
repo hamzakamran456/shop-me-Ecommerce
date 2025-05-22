@@ -35,12 +35,51 @@ const TestimoialsData = [
 ];
 
 const Testimonial = () => {
+  var settings = {
+    dots: true,
+    arrows: false,
+    Infinite: true,
+    speed: 500,
+    slideToscroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    responsive:[
+      {
+        breakpoints: 10000,
+        settings:{
+          slideToShow: 3,
+          slideToscroll: 1,
+          Infinite: true,
+        },
+      },
+      {
+         breakpoints: 1024,
+        settings:{
+          slideToShow: 2,
+          slideToscroll: 1,
+          initialSlider: true,
+        }, 
+      },
+      {
+         breakpoints: 640,
+        settings:{
+          slideToShow: 1,
+          slideToscroll: 1,
+        }, 
+      },
+    ]
+  }
+
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, iure
-      nostrum. Id nemo, maxime alias, reiciendis unde fugit odit dolores sequi
-      similique provident itaque distinctio. Inventore nemo ratione voluptatum
-      aut?
+    <div className="py-10 mb-10">
+    <div className="container">
+      <div className="text-center mb-10 max-w-[600px] mx-auto">
+        p
+      </div>
+    </div>
     </div>
   );
 };
