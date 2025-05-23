@@ -9,6 +9,7 @@ import Products from "./components/Products/Products";
 import TopProducts from "./components/TopProducs/TopProducts";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Testimonial from "./components/Testimonials/Testimonial";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [orderPopup, setOrderPopup] = useState(false);
@@ -36,6 +37,7 @@ function App() {
         <Banner />
         <Subscribe />
         <Testimonial />
+        <Footer />
       </div>
     </>
   );
