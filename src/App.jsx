@@ -8,6 +8,7 @@ import Hero from "./components/Hero/Hero";
 import Products from "./components/Products/Products";
 import TopProducts from "./components/TopProducs/TopProducts";
 import Subscribe from "./components/Subscribe/Subscribe";
+import Testimonial from "./components/Testimonials/Testimonial";
 
 function App() {
   const [orderPopup, setOrderPopup] = useState(false);
@@ -34,6 +35,7 @@ function App() {
         <TopProducts handleOrderPopup={handleOrderPopup} />
         <Banner />
         <Subscribe />
+        <Testimonial />
       </div>
     </>
   );
